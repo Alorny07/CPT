@@ -124,6 +124,7 @@ def zeroProcedure(row, column, k, b):
 
 
 def checkZeros(k, b, row, column):
+
     oldGrid = copy.deepcopy(k)
     zeroProcedure(row, column, k, b)
     if oldGrid == k:
@@ -138,10 +139,12 @@ def checkZeros(k, b, row, column):
             return
 
 def marker(row, column, k):
+
     k[row][column] = '⚐'
     printBoard(k)
 
 def printBoard(b):
+
     replit.clear()
     print('    A   B   C   D   E   F   G   H   I')
     print('  ╔═══╦═══╦═══╦═══╦═══╦═══╦═══╦═══╦═══╗')
@@ -152,6 +155,7 @@ def printBoard(b):
     print('  ╚═══╩═══╩═══╩═══╩═══╩═══╩═══╩═══╩═══╝')
 
 def choose(b, k, startTime):
+
     letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h' ,'i']
     numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8']
     while True:
@@ -167,6 +171,7 @@ def choose(b, k, startTime):
 
 
 def play(b, k, startTime):
+
     column, row = choose(b, k, startTime)
     v = l(row, column, b)
     if v == '*':
