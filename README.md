@@ -199,7 +199,6 @@ def play(b, k, startTime):
         print('You win!')
         print('Time: ' + str(round(time.time() - startTime)) + 's')
         playAgain = input('Play again? (Y/N): ')
-        playAgain = playAgain.lower()
         if playAgain == 'y':
             replit.clear()
             reset()
