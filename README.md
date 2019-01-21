@@ -12,7 +12,7 @@ def reset():
     print('''
     For instructions on how to play, type 'I'
     Start to play, type 'P'
-''')
+    ''')
 
     choice = input('Type here: ').upper()
 
